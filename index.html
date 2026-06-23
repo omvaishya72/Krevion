@@ -153,21 +153,21 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 
 .glass-card{background:var(--glass-bg);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border);border-radius:var(--r-lg);position:relative;overflow:hidden}
 
-/* ====== SLIDE 1 — ITERFACE ====== */
-.s-cover{align-items:center;justify-content:center;text-align:center;padding:90px 6vmin 80px}
-.s-cover-inner{max-width:1100px;width:100%;display:flex;flex-direction:column;align-items:center;gap:32px;position:relative;margin:auto 0}
-.s-cover-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120%;height:140%;background:radial-gradient(ellipse,rgba(99,102,241,.25),transparent 60%);filter:blur(60px);z-index:-1;animation:coverPulse 6s ease-in-out infinite alternate}
-@keyframes coverPulse{to{opacity:.7;transform:translate(-50%,-50%) scale(1.1)}}
-.s-cover h1{font-size:clamp(54px,8vw,140px)}
-.s-cover h1 .line{display:block;overflow:hidden}
-.s-cover h1 .line>span{display:inline-block;transform:translateY(110%);transition:transform 1.4s var(--ee)}
-.slide.active .s-cover h1 .line>span{transform:translateY(0)}
-.slide.active .s-cover h1 .line:nth-child(1)>span{transition-delay:.5s}
-.slide.active .s-cover h1 .line:nth-child(2)>span{transition-delay:.7s}
-.s-cover-meta{display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:8px;font-family:var(--font-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
-.s-cover-meta .sep{width:24px;height:1px;background:var(--ink-4)}
-.s-cover-cta{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap;justify-content:center}
-.s-cover-version{position:absolute;bottom:-32px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:10px;color:var(--ink-4);letter-spacing:.3em;text-transform:uppercase;white-space:nowrap}
+/* ====== SLIDE 1 — INTERFACE ====== */
+.s-INTERFACE{align-items:center;justify-content:center;text-align:center;padding:90px 6vmin 80px}
+.s-INTERFACE-inner{max-width:1100px;width:100%;display:flex;flex-direction:column;align-items:center;gap:32px;position:relative;margin:auto 0}
+.s-INTERFACE-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120%;height:140%;background:radial-gradient(ellipse,rgba(99,102,241,.25),transparent 60%);filter:blur(60px);z-index:-1;animation:INTERFACEPulse 6s ease-in-out infinite alternate}
+@keyframes INTERFACEPulse{to{opacity:.7;transform:translate(-50%,-50%) scale(1.1)}}
+.s-INTERFACE h1{font-size:clamp(54px,8vw,140px)}
+.s-INTERFACE h1 .line{display:block;overflow:hidden}
+.s-INTERFACE h1 .line>span{display:inline-block;transform:translateY(110%);transition:transform 1.4s var(--ee)}
+.slide.active .s-INTERFACE h1 .line>span{transform:translateY(0)}
+.slide.active .s-INTERFACE h1 .line:nth-child(1)>span{transition-delay:.5s}
+.slide.active .s-INTERFACE h1 .line:nth-child(2)>span{transition-delay:.7s}
+.s-INTERFACE-meta{display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:8px;font-family:var(--font-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.s-INTERFACE-meta .sep{width:24px;height:1px;background:var(--ink-4)}
+.s-INTERFACE-cta{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap;justify-content:center}
+.s-INTERFACE-version{position:absolute;bottom:-32px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:10px;color:var(--ink-4);letter-spacing:.3em;text-transform:uppercase;white-space:nowrap}
 
 /* ====== SLIDE 2 — PROBLEM ====== */
 .s-problem{justify-content:center}
@@ -336,7 +336,7 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 .slide.active .more-card:nth-child(3){animation-delay:.9s}
 .slide.active .more-card:nth-child(4){animation-delay:1.05s}
 .more-card .mc-thumb{aspect-ratio:16/10;overflow:hidden;position:relative;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(236,72,153,.08));border-bottom:1px solid var(--line-2)}
-.more-card .mc-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .8s var(--ee);display:block}
+.more-card .mc-thumb img{width:100%;height:100%;object-fit:INTERFACE;object-position:top center;transition:transform .8s var(--ee);display:block}
 .more-card:hover .mc-thumb img{transform:scale(1.06);transform-origin:top center}
 .more-card .mc-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,14,26,.5));pointer-events:none;opacity:.6}
 .more-card .mc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
@@ -370,7 +370,7 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 
 /* ====== SLIDE 9 — CTA ====== */
 .s-cta{align-items:center;justify-content:center;text-align:center;padding:90px 6vmin 80px}
-.s-cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:120%;background:radial-gradient(ellipse,rgba(236,72,153,.18),transparent 60%);filter:blur(60px);z-index:-1;animation:coverPulse 6s ease-in-out infinite alternate}
+.s-cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:120%;background:radial-gradient(ellipse,rgba(236,72,153,.18),transparent 60%);filter:blur(60px);z-index:-1;animation:INTERFACEPulse 6s ease-in-out infinite alternate}
 .s-cta-inner{max-width:880px;display:flex;flex-direction:column;align-items:center;gap:28px;position:relative;margin:auto 0}
 .s-cta h2{font-size:clamp(46px,7vw,110px)}
 .s-cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:12px}
@@ -392,9 +392,9 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 }
 @media (max-width:640px){
   html,body{overflow:hidden}
-  .slide-inner,.s-cover,.s-cta{padding:72px 18px 24px}
-  .s-cover-inner{gap:24px}
-  .s-cover-version{position:static;transform:none;margin-top:24px;display:block}
+  .slide-inner,.s-INTERFACE,.s-cta{padding:72px 18px 24px}
+  .s-INTERFACE-inner{gap:24px}
+  .s-INTERFACE-version{position:static;transform:none;margin-top:24px;display:block}
   .brand{top:18px;left:18px;font-size:14px}
   .brand .logo{width:24px;height:24px}
   .nav{top:16px;right:16px;gap:5px}
@@ -405,7 +405,7 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
   .tl-item{padding:24px 16px 16px}
   .tl-item::before{top:18px;left:0;transform:none}
   .s-features-head,.s-metrics-head,.s-roadmap-head,.s-compare-head{margin-top:40px}
-  .s-cover h1{font-size:44px}
+  .s-INTERFACE h1{font-size:44px}
   .s-cta h2{font-size:42px}
   .menu-panel{width:94vw;max-height:88vh}
   .menu-header{padding:18px 20px 14px}
@@ -417,7 +417,7 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
   .menu-footer{padding:12px 20px 16px;font-size:9px}
 }
 @media (max-height:500px) and (orientation:landscape){
-  .slide-inner,.s-cover,.s-cta{padding:60px 28px 40px}
+  .slide-inner,.s-INTERFACE,.s-cta{padding:60px 28px 40px}
   .nav{top:12px;right:12px}
   .brand{top:12px;left:14px}
   .section-tag{bottom:12px;left:14px}
@@ -435,7 +435,7 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
   <span class="logo"></span> Krevion
 </div>
 
-<div class="section-tag"><span class="pip"></span><span id="sectionName">Cover</span></div>
+<div class="section-tag"><span class="pip"></span><span id="sectionName">INTERFACE</span></div>
 
 <a class="tm-credit" href="https://templatemo.com" target="_blank" rel="nofollow noopener" aria-label="Designed by TemplateMo">
   <span class="tm-dot"></span><span class="tm-label">Design: TemplateMo</span>
@@ -443,27 +443,27 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 
 <div class="deck" id="deck">
 
-  <!-- ============ 1. COVER ============ -->
-  <section class="slide active" data-section="Cover" data-sub="The launch headline">
-    <div class="slide-inner s-cover">
-      <div class="s-cover-inner">
-        <div class="s-cover-glow"></div>
+  <!-- ============ 1. INTERFACE ============ -->
+  <section class="slide active" data-section="INTERFACE" data-sub="The launch headline">
+    <div class="slide-inner s-INTERFACE">
+      <div class="s-INTERFACE-inner">
+        <div class="s-INTERFACE-glow"></div>
         <div class="eyebrow reveal"><span class="dt"></span>Spring 2026 launch</div>
         <h1 class="h-display">
           <span class="line"><span><span class="grd">Krevion</span> is here.</span></span>
           <span class="line"><span>Website building agency<button></button></span></span>
         </h1>
         <p class="body-lg reveal" style="max-width:680px">A new way to read your stack. Real-time signals, narrated in plain language &mdash; built into Lustro as a first-class citizen.</p>
-        <div class="s-cover-meta reveal">
+        <div class="s-INTERFACE-meta reveal">
           <span>v 4.0</span><span class="sep"></span>
           <span>May 09, 2026</span><span class="sep"></span>
           <span>Live in 14 regions</span>
         </div>
-        <div class="s-cover-cta reveal">
+        <div class="s-INTERFACE-cta reveal">
           <a class="btn-primary">Watch the keynote &rarr;</a>
           <a class="btn-secondary" data-goto="2">Read the changelog</a>
         </div>
-        <div class="s-cover-version">PRESS / DECK / 0001 &middot; INTERNAL</div>
+        <div class="s-INTERFACE-version">PRESS / DECK / 0001 &middot; INTERNAL</div>
       </div>
     </div>
   </section>
