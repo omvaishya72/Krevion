@@ -142,7 +142,9 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 .h-display{font-family:var(--font-sans);font-weight:500;line-height:1.02;letter-spacing:-.035em}
 .h-display .grd{background:var(--grad-a);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-.body-lg{font-family:var(--font-body);font-size:clamp(15px,1.4vw,18px);line-height:1.6;color:var(--ink-2);font-weight:400}
+.body-lg{
+    max-width:850px;
+}
 .body-md{font-family:var(--font-body);font-size:14px;line-height:1.6;color:var(--ink-2)}
 .body-sm{font-family:var(--font-body);font-size:12px;line-height:1.5;color:var(--ink-3)}
 
@@ -186,7 +188,10 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
 /* ====== SLIDE 3 — PRODUCT ====== */
 .s-product{justify-content:center}
 .s-product-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:5vmin;align-items:center;flex:1}
-.s-product-left{padding-left:2vmin;display:flex;flex-direction:column;gap:24px}
+.s-product-left{
+    width:100%;
+    max-width:1100px;
+}
 .s-product h2{font-size:clamp(38px,5vw,72px)}
 .s-product .product-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.3);color:var(--cyan);padding:6px 14px;border-radius:100px;font-family:var(--font-body);font-size:12px;width:fit-content}
 .s-product-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
@@ -508,87 +513,103 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
   </section>
 
   <!-- ============ 3. PRODUCT ============ -->
-  <section class="slide" data-section="Introducing Pulse" data-sub="The new feature">
+  <section class="slide" <section class="slide" data-section="Our Work">
+
     <div class="slide-inner s-product">
+  
       <div class="s-product-grid">
+  
+        <!-- LEFT SIDE -->
         <div class="s-product-left">
-          <span class="product-tag reveal">&#10022; New &middot; In Lustro 4.0</span>
-          <h2 class="h-display reveal">Unlock your<span class="grd">POTENTIAL</span>. Our Demo Pojects.</h2>
+  
+          <span class="product-tag reveal">
+            ✦ Crafted with passion
+          </span>
+  
+          <h2 class="h-display reveal">
+            Unlock your<span class="grd">POTENTIAL</span>. We Don't Just Build Websites, We Build Your Digital First Impression.
+          </h2>
+  
           <p class="body-lg reveal">
-            Explore some of our recent projects and see how we build modern,
-            responsive and user-friendly websites for businesses and individuals.
-         </p>
-         <div class="demo-projects reveal">
-
-          <div class="demo-card">
-            <h3>Project One</h3>
-            <p>Modern Business Website</p>
-            <a href="https://yourproject1.com" target="_blank">
-              View Website →
-            </a>
-          </div>
-        
-          <div class="demo-card">
-            <h3>Project Two</h3>
-            <p>Portfolio Website</p>
-            <a href="https://yourproject2.com" target="_blank">
-              View Website →
-            </a>
-          </div>
-        
-          <div class="demo-card">
-            <h3>Project Three</h3>
-            <p>E-Commerce Website</p>
-            <a href="https://yourproject3.com" target="_blank">
-              View Website →
-            </a>
-          </div>
-        
+            Every business deserves a website that builds trust, attracts
+            customers and leaves a lasting impression. Explore some of our
+            work and discover how we transform ideas into modern digital
+            experiences.
+          </p>
+  
         </div>
+  
+        <!-- RIGHT SIDE -->
         <div class="s-product-right">
-
+  
           <div class="enquiry-card">
-        
-            <h3>Send an Enquiry</h3>
-        
+  
+            <!-- IMAGE -->
+            <div class="enquiry-image">
+              <img src="images/enquiry.jpg" alt="Contact">
+            </div>
+  
+            <!-- YOUR WORKS -->
+            <div class="works-links">
+  
+              <a href="https://yourwebsite1.com" target="_blank">
+                ↗ Demo Website One
+              </a>
+  
+              <a href="https://yourwebsite2.com" target="_blank">
+                ↗ Demo Website Two
+              </a>
+  
+              <a href="https://yourwebsite3.com" target="_blank">
+                ↗ Demo Website Three
+              </a>
+  
+            </div>
+  
+            <!-- ENQUIRY FORM -->
             <form
               action="https://formsubmit.co/yourgmail@gmail.com"
               method="POST"
             >
+  
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
                 required
               >
-        
+  
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Your Gmail"
                 required
               >
-        
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone Number"
-              >
-        
+  
               <textarea
-                name="message"
-                placeholder="Tell us about your project"
-                rows="5"
+                name="brief"
+                rows="4"
+                placeholder="Tell us briefly about your project..."
+                required
               ></textarea>
-        
+  
               <button type="submit">
                 Send Enquiry
               </button>
+  
             </form>
-        
+  
           </div>
-        
+  
         </div>
+  
+      </div>
+  
+    </div>
+  
+  </section>
+         
+        
   </section>
 <!-- POPUP MENU -->
 <div class="menu-overlay" id="menuOverlay"></div>
