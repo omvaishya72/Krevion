@@ -428,6 +428,106 @@ html,body{height:100%;width:100%;background:var(--bg);color:var(--ink);font-fami
   .section-tag{bottom:12px;left:14px}
   .tm-credit{bottom:12px;right:14px}
 }
+.s-product-grid{
+  display:grid;
+  grid-template-columns:1fr 520px;
+  gap:80px;
+  align-items:center;
+}
+
+.enquiry-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:30px;
+  overflow:hidden;
+  backdrop-filter:blur(20px);
+}
+
+.enquiry-image{
+  position:relative;
+  height:220px;
+}
+
+.enquiry-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.enquiry-image::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:120px;
+  background:linear-gradient(
+      to bottom,
+      transparent,
+      #10131f
+  );
+}
+
+.works-links{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  padding:30px;
+}
+
+.works-links a{
+  text-decoration:none;
+  color:white;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:16px 20px;
+  transition:.3s;
+}
+
+.works-links a:hover{
+  transform:translateX(10px);
+  border-color:#c084fc;
+}
+
+.enquiry-card form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  padding:30px;
+}
+
+.enquiry-card input,
+.enquiry-card textarea{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:16px;
+  color:white;
+  outline:none;
+}
+
+.enquiry-card button{
+  border:none;
+  border-radius:16px;
+  padding:16px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  color:white;
+  background:linear-gradient(
+      90deg,
+      #8b5cf6,
+      #ec4899
+  );
+}
+
+@media(max-width:900px){
+  .s-product-grid{
+      grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 <!--
